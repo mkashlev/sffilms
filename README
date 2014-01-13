@@ -1,0 +1,22 @@
+Find film locations for any movie that as filmed in SF.
+by Dmitry Kashlev
+Using SFGov API.
+
+Type in a movie name into the search text field, and select the movie from the autocomplete list.
+This should display all filming locations for that movie on the map.
+This should also display list of locations on the right
+Clicking on any location on the right will highlight it on the map.
+
+Code was done in python. I picked Python/Django as I am familiar with it from my work at Coffee Meets Bagel. However, I never set up the system at CMB, so I spent quite a lot of time setting up django on my heroku instance.
+
+I am experienced in Javascript and jQuery, so this was the framework of my choice as a result.
+
+You can access my implementation at: http://sffilms-dmitry.herokuapp.com/films/
+the code is in git: git@heroku.com:sffilms-dmitry.git
+github: http://github.com/mkashlev/sffilms
+
+
+More about me:
+Linkedin: http://www.linkedin.com/in/mkashlev
+sample iOS code (alerts): https://github.com/mkashlev/cmb-spinoff
+

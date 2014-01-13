@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCyyhEKX6DbZ1f1sowkcN9bwUjuPbfZDDw&sensor=false">
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{% static "js/films.js" %}"></script>
+<link href="{% static "css/films.css" %}" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div id="googleMap"></div>
+<div id="details">
+   <div id="intro">
+      This tool allows you to display all filming locations on the map for any given film.
+   </div>
+   <input type="text" id="searchInput" placeholder="Please enter a movie title...">
+   <div id="responseContainer" style="display:none;">
+      <div id="detailsTitle">Filming Locations for: <span style="font-weight:bold;" id="filmName"></span></div>
+      <div id="detailPlaceholder" style="display:none"></div>
+   </div>
+</div>
+
+</body>
+</html>
